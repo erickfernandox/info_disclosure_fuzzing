@@ -31,19 +31,14 @@ requests:
       - "{{BaseURL}}/?languageCode=1&model=1&userAgent=1&utm_medium=1&utm_campaign=1&utm_content=1&trackingCode=1&session=1&timestamp=1&nonce=1&hash=1&grant_type=1&client_secret=1&realm=1&resource=1&preload=1&async=1&autoplay=1&control=1&controls=1&href=1&start=1&end=1&frameborder=1&referrer-policy=1&token=XSS"    
 
 
+
     matchers-condition: and
     matchers:
-      - type: word
-        part: body
-        words:                    
-          - ""                
-
-        condition: and
+      - type: regex
+        regex:
+          - "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
 
       - type: word
         words:
           - "application/json"
         part: header
-
-        condition: and
-      
