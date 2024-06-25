@@ -36,6 +36,8 @@ requests:
         words:
           - "username:"
           - "username\":"          
+          - "e-mail:"
+          - "e-mail\":"               
         part: body
 
       - type: word
