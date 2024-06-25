@@ -1,0 +1,47 @@
+id: information-disclosure-erickfernandox
+
+info:
+  name: Information Disclosure
+  author: erickfernandox
+  severity: high
+  tags: cve,disclosure
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/?property=1&itemprop=1&datatype=1&about=1&typeof=1&hreflang=1&xmlns=1&placeholder=1&request_id=1&resource_url=1&contextType=1&challenge_url=1&linguagem=1&idCanal=1&channel=1&uf=1&target_id=1&manufacturer=1&t=1&scale=1&jsessionid=1&load=1&forward=1&userAction=1&ssoToken=1&SSO_token=1&token=XSS"     
+      - "{{BaseURL}}/?securitytext=1&panel=1&subscrptionid=1&promocode=1&ordertype=1&reg=1&sms=1&user_in=1&item=1&license_number=1&originalurl=1&formid=1&reg_ip=1&thumbnail=1&arrival=1&meeting_id=1&internal=1&Columnid=1&culture=1&cflang=1&filter_by=1&sourceid=1&sourceapp=1&pageurl=1&page_url=1&stream=1&token=XSS"      
+      - "{{BaseURL}}/?ping=1&execution=1&location_id=1&RootFolder=1&root=1&click=1&ctag=1&messageid=1&message_id=1&queryinput=1&order_id=1&keyword=1&appid=1&api=1&releaseid=1&relay=1&root_id=1&unknown=1&auth_req=1&search_geolocation=1&params=1&persons=1&person=1&search_request=1&d=1&token=XSS"    
+      - "{{BaseURL}}/?purchases=1&widget=1&targetUrl=1&public=1&requestUrl=1&redirect_back=1&Listid=1&module=1&PageNum=1&option=1&Customerid=1&company_id=1&login_link=1&keys=1&paymentType=1&errorcode=1&courseCode=1&post_type=1&send_to=1&refid=1&vouchercode=1&os_destination=1&redirected-from=1&return_to_url=1&token=XSS"     
+      - "{{BaseURL}}/?storeid=1&catalogid=1&langid=1&pageView=1&orderBy=1&homePageURL=1&absoluteURL=1&DirectoryPath=1&environment=1&shopUserid=1&agnt=1&pixel=1&partner=1&partner_id=1&cashback=1&lang_id=1&page_type=1&reg-type=1&account_name=1&market=1&site_id=1&campaignid=1&creative=1&matchtype=1&token=XSS" 
+      - "{{BaseURL}}/?targetid=1&available=1&modules=1&reset=1&ids=1&userEmail=1&cm=1&friend=1&contract=1&online=1&route=1&routes=1&IP=1&trader=1&mobile=1&review_id=1&back_url=1&amount=1&filetype=1&search_type=1&step=1&order_by=1&feed=1&transaction_id=1&memory=1&Clientid=1&referralCode=1&token=XSS"          
+      - "{{BaseURL}}/?operator_id=1&network=1&product_ids=1&csrf_token=1&menu_id=1&authuser=1&section=1&faq=1&rate=1&idsite=1&provider=1&id_category=1&official=1&identifier=1&check_in=1&view_by=1&componentid=1&validate_token=1&val=1&invoice=1&ticket=1&detail=1&curtype=1&action_type=1&uri_path=1&token=XSS"     
+      - "{{BaseURL}}/?deadline=1&productKey=1&bundleid=1&searchid=1&tracking=1&cid=1&element_id=1&char=1&custom=1&act=1&agent=1&shop_id=1&otp_type=1&otp=1&fromUrl=1&count=1&policy=1&expire=1&mime_type=1&cd=1&flag=1&eventid=1&_=1&ssl=1&comments=1&pr-redirect=1&subcategories=1&token=XSS"           
+      - "{{BaseURL}}/?collection=1&requirements=1&param=1&contest=1&photoid=1&fb_action_ids=1&highlight=1&join=1&membertype=1&active=1&subsection=1&release_id=1&sound=1&track=1"
+      - "{{BaseURL}}/?embed=1&jumpTo=1&segment=1&dateRange=1&hex=1&base64=1&promoid=1&promo_id=1&eventType=1&audio=1&video=1&pageIndex=1&token=XSS"     
+      - "{{BaseURL}}/?play=1&brand_id=1&edition=1&edicao=1&fname=1&xhr=1&sort_by=1&agree=1&confirm=1&character=1&apiType=1&locale_id=1&groupid=1&group_id=1&tag_id=1"
+      - "{{BaseURL}}/?dnfile=1&VideoFile=1&memb=1&sMode=1&hsLang=1&Controller=1&Model=1&View=1&updateDt=1&dest_url=1&origin_url=1&ext_url=1&tab_id=1&user_info=1&ref_id=1"     
+      - "{{BaseURL}}/?hosting=1&verification=1&selected_app=1&edit=1&iditem=1&senderName=1&senderEmail=1&formLocation=1&jobTitle=1&emailStatus=1&requestType=1&emailid=1&formType=1&emailAddress=1"
+      - "{{BaseURL}}/?affiliateid=1&mediaId=1&skinPath=1&eos=1&promochild=1&utm_term=1&tpl=1&project_id=1&suggest=1&origem=1&proximo=1&referral_source=1&tag-id=1&imagem=1"
+      - "{{BaseURL}}/?compare=1&demo=1&mod=1&free=1&abo_type=1&otag=1&privacy=1&pageId=1&incident_id=1&SuccessUrl=1&ad_group_id=1&accountNumber=1&policyNumber=1&agentId=1&traittype=1"
+      - "{{BaseURL}}/?redirectTo=1&shortlink=1&start_page=1&filter-subtype=1&attr=1&bucket=1&ship_to=1&activity=1&trade=1&swap=1&markets=1&copytrading=1&recharge=1&red=1&expired=1"
+      - "{{BaseURL}}/?chkout=1&proto=1&credential=1&credencial=1&scoped=1&utm_creative=1&search_terms=1&hunt=1&organization=1&back=1&notify=1&successRedirect=1&itm_data=1&webinar=1"
+      - "{{BaseURL}}/?campID=1&agencyId=1&registration=1&SessionKey=1&seed=1&source_page=1&loc=987&imageId=1&jobid=1&policyholder=1&preview_id=1&dataURL=1&env=1&nobounce=1&serv=1&auth_uri=1"
+      - "{{BaseURL}}/?EndCategory=1&_requestid=1&tab_name=1&custom-css=1&x-campaign=1&partNumber=1&referral=1&coupon=1&ref_type=1&id&destinationAddress=1&traffic_src=1&sap-client=1&appwebview=1"
+      - "{{BaseURL}}/?ticketReference=1&ByPath=1&lang_redirect=1&schedule=1&screen=1&exchange=1&asset_type=1&sc_channel=1&ssoType=1&colorName=1&details=1&_encoding=1&encoding=1&expand=1"
+      - "{{BaseURL}}/?question=1&continue_to=1&diff=1&forgot=1&purpose=1&safe_search=1&languageid=1&offering_id=1&sysparm_query=1&suffix=1&organization_slug=1&merchant=1&viewkey=1&pkey=1"
+      - "{{BaseURL}}/?agreed=1&EntityID=1&viewportId=1&resource_tag=1&propertyCode=1&ptype=1&modecode=1&evidence=1&contact-person=1&bundle_key=1&new_app=1&originUrl=1&ViewName=1&spaceID=1"      
+      - "{{BaseURL}}/?AuthState=1&subjectCategory=1&score=1&achievement=1&tenantId=1&change_lang=1&agencyNumber=1&node=1&referral_path=1&files=1&mailTo=1&nick=1&sitename=1&mediaItemId=1"
+      - "{{BaseURL}}/?gatewayID=1&filterAttributes=1&navPage=1&nextUrl=1&tagFilters=1&communityId=1&remote=1&securityId=1&UserToken=1&sysparam=1&topic=1&pgid=1&subtype=1&referrer_id=1&workspace=1"
+      - "{{BaseURL}}/?promotion=1&useCase=1&album=1&addurl=1&locationType=1&viewAs=1&subsection=1&userLanguage=1&filePath=1&tracker=1&placement=1&authDomain=1&appURL=1&team=1"
+
+    matchers-condition: and
+    matchers:
+      - type: regex
+        regex:
+          - "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])"
+
+      - type: word
+        words:
+          - "application/json"
+        part: header
