@@ -43,5 +43,5 @@ requests:
 
       - type: word
         words:
-          - "application/json"
+          - "Content-Type: application/json"
         part: header
