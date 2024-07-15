@@ -52,7 +52,7 @@ requests:
           - "ENVIRONMENT"
           - "BACKUP"
           - "CONFIG"
-          - "version"
+          
       - type: word
         words:
           - "403 Forbidden"
