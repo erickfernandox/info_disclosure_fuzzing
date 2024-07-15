@@ -9,35 +9,36 @@ info:
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/?qs=1&search=1&query=1&keywords=1&term=1&text=1&input=1&value=1&username=1&password=1&name=1&email=1&comment=1&message=1&body=1&title=1&subject=1&description=1"
-      - "{{BaseURL}}/?content=1&id=1&user=1&uid=1&redirect_url=1&return=1&url=https://1&titulo=1&link=1&goto=1&page=1&redir=1&redirect=1&redirect_to=1&token=XSS&next=1&callback=1&referrer=1"
-      - "{{BaseURL}}/?referer=1&target=1&destination=1&returnUrl=1&return_uri=1&return_path=1&returnto=1&return_to=1&msg=1&error=1&date=1&token=1&sort=1&lang=1&file=1&type=1&next_url=1"
-      - "{{BaseURL}}/?continue=1&dest=1&destination_uri=1&destination_url=1&go=1&to=1&view=1&sc=1&path=1&token=XSS&prod=1&main=1&data=1&action=1&busca=1&tag=1&show=1"
-      - "{{BaseURL}}/?cpf=1&js=1&css=1&xml=1&cmd=1&key=1&secret=1&height=1&with=1&source=1&auth=1&author=1&login=1&logout=1&iframe=1&offset=1&app=1&home=1&post=1&format=1"
-      - "{{BaseURL}}/?image=1&script=1&cod=1&code=1&time=1&new=1&download=1&ref=1&category_id=1&token=XSS&ads=1&img=1&gclid=1&plan=1&conta=1&_id=1mgs=1"
-      - "{{BaseURL}}/?price=1&v=1&pag=1&feed=1&n=1&ids=1&origem=1&group=1&cat=1&preview=1&nome=1&from=1&fileId=1&err=1&page_id=1&region=1&order=1&id_url=1&nav=1"
-      - "{{BaseURL}}/?by=1&pg=1&admin=1&api_key=1&configUrl=1&baseUrl=1&shortUrl=1&token=XSS&mode=1&foto=1&photo=1&msisdn=1&pagid=1&country=1&city=1&state=1&recommendationId=1"
-      - "{{BaseURL}}/?limit=1&profile=1&signature=1&stage=1&share=1&accessCode=1&gid=1&galerie=1&include=1&source=1&filter=1&data_url=1&cookie=1&videoId=1&slug=1&resize=1&w=1&h=1&nextPage=1&tab=1&token=XSS"
-      - "{{BaseURL}}/?size=1&cache=1&APIKey=1&random=1&alt=1&teamid=1&folder=1&registrationId=1&src=1&courseId=1&rebuild=1&r=1&endpoint=1&siteID=1&year=1&typeId=1&idpartner=1"
-      - "{{BaseURL}}/?receiver=1&level=1&fbclid=1&values=1&onSuccess=1&theme=1&user_id=1&userId=1&template=1&version=1&select=1&token=XSS&changeTo=1&os=1&ver=1&SAMLRequest=1&uuid=1&config=1"
-      - "{{BaseURL}}/?linkId=1&client_id=1&locale=1&view_type=1&qualify=1&googleID=1&campaign=1&status=1&service=1&class=1&crop=1&application=1&uri=1&report=1&event_name=1&debug=1&tipo=1"
-      - "{{BaseURL}}/?strData=1&pagina=1&idHome=1&sleep=1&account=1&token=XSS&prefix=1&oauth=1&mail=1&index=1&authorize=1&tokenID=1&scope=1&response_type=1"
-      - "{{BaseURL}}/?onclick=1&form=1&position=1&json=1&jsonp=1&cron=1&account_id=1&accountID=1&display=1&_csrf=1&csrf=1&signup=1&signout=1&logoff=1&public=1&footer=1&header=1&contact=1&setup=1&migration=1&token=XSS"      
-      - "{{BaseURL}}/?features=1&feature=1&chains=1&chain=1&info=1&into=1&app_id=1&release=1&request=1&alert=1&notice=1&notification=1&warning=1&success=1&feedback=1&prompt=1&modal=1&popup=1&pop=1&toast=1&banner=1&announcement=1&note=1&hint=1&confirmation=1&result=1&update=1&response=1&token=XSS"
-      - "{{BaseURL}}/?dialog=1&box=1&commentary=1&statement=1&commentary=1&explanation=1&guideline=1&tip=1&instruction=1&pointer=1&suggestion=1&direction=1&advisory=1&remark=1&notation=1&output=1&outcome=1&reflection=1&label=1&mensagem=1&texto=1&conteudo=1&payload=1&aviso=1&alerta=1&notificacao=1&token=XSS"
-      - "{{BaseURL}}/?instrucao=1&comunicado=1erromsg=1&sucesso=1&btn=1&button=1&leight=1&host=1&domain=1&http=1&subdomain=1&server=1&origin=1&ip=1&protocol=1&gateway=1&site=1&platform=1&language=1&encode=1&scheme=1&consulta=1&submit=1&method=1&data-id=1&authType=1&isRegister=1&loginRequestId=1&token=XSS"      
-      - "{{BaseURL}}/?client=1&filename=1&ext=1&external=1&utm_source=1&visibility=1&season=1&monitor=1&Itemid=1&promo=1&category=1&subscribe=1&unsubscribe=1&unsubscribe_token=1&event=1&local=1&brand=1&kind=1&department=1&product=1&product_id=1&productId=1&zipcode=1&day=1&phone=1&cc=1&command=1&token=XSS"  
-      - "{{BaseURL}}/?querystring=1&charset=1&currency=1&device=1&browser=1&access_token=1&age=1&firstname=1&lastname=1&sobrenome=1&address=1&role=1&color=1&quantity=1&price=1&discount=1&rating=1&location=1&startDate=1&endDate=1&sessionID=1&oauthToken=1&errorURL=1&proxy=1&radius=1&callbackUrl=1&token=XSS"
-      - "{{BaseURL}}/?languageCode=1&model=1&userAgent=1&utm_medium=1&utm_campaign=1&utm_content=1&trackingCode=1&session=1&timestamp=1&nonce=1&hash=1&grant_type=1&client_secret=1&realm=1&resource=1&preload=1&async=1&autoplay=1&control=1&controls=1&href=1&start=1&end=1&frameborder=1&referrer-policy=1&token=XSS"    
+      - "{{BaseURL}}/?qs=10&search=10&query=10&keywords=10&term=10&text=10&input=10&value=10&username=10&password=10&name=10&email=10&comment=10&message=10&body=10&title=10&subject=10&description=10"
+      - "{{BaseURL}}/?content=10&id=10&user=10&uid=10&redirect_url=10&return=10&url=https://10&titulo=10&link=10&goto=10&page=10&redir=10&redirect=10&redirect_to=10&token=XSS&next=10&callback=10&referrer=10"
+      - "{{BaseURL}}/?referer=10&target=10&destination=10&returnUrl=10&return_uri=10&return_path=10&returnto=10&return_to=10&msg=10&error=10&date=10&token=10&sort=10&lang=10&file=10&type=10&next_url=10"
+      - "{{BaseURL}}/?continue=10&dest=10&destination_uri=10&destination_url=10&go=10&to=10&view=10&sc=10&path=10&token=XSS&prod=10&main=10&data=10&action=10&busca=10&tag=10&show=10"
+      - "{{BaseURL}}/?cpf=10&js=10&css=10&xml=10&cmd=10&key=10&secret=10&height=10&with=10&source=10&auth=10&author=10&login=10&logout=10&iframe=10&offset=10&app=10&home=10&post=10&format=10"
+      - "{{BaseURL}}/?image=10&script=10&cod=10&code=10&time=10&new=10&download=10&ref=10&category_id=10&token=XSS&ads=10&img=10&gclid=10&plan=10&conta=10&_id=10mgs=10"
+      - "{{BaseURL}}/?price=10&v=10&pag=10&feed=10&n=10&ids=10&origem=10&group=10&cat=10&preview=10&nome=10&from=10&fileId=10&err=10&page_id=10&region=10&order=10&id_url=10&nav=10"
+      - "{{BaseURL}}/?by=10&pg=10&admin=10&api_key=10&configUrl=10&baseUrl=10&shortUrl=10&token=XSS&mode=10&foto=10&photo=10&msisdn=10&pagid=10&country=10&city=10&state=10&recommendationId=10"
+      - "{{BaseURL}}/?limit=10&profile=10&signature=10&stage=10&share=10&accessCode=10&gid=10&galerie=10&include=10&source=10&filter=10&data_url=10&cookie=10&videoId=10&slug=10&resize=10&w=10&h=10&nextPage=10&tab=10&token=XSS"
+      - "{{BaseURL}}/?size=10&cache=10&APIKey=10&random=10&alt=10&teamid=10&folder=10&registrationId=10&src=10&courseId=10&rebuild=10&r=10&endpoint=10&siteID=10&year=10&typeId=10&idpartner=10"
+      - "{{BaseURL}}/?receiver=10&level=10&fbclid=10&values=10&onSuccess=10&theme=10&user_id=10&userId=10&template=10&version=10&select=10&token=XSS&changeTo=10&os=10&ver=10&SAMLRequest=10&uuid=10&config=10"
+      - "{{BaseURL}}/?linkId=10&client_id=10&locale=10&view_type=10&qualify=10&googleID=10&campaign=10&status=10&service=10&class=10&crop=10&application=10&uri=10&report=10&event_name=10&debug=10&tipo=10"
+      - "{{BaseURL}}/?strData=10&pagina=10&idHome=10&sleep=10&account=10&token=XSS&prefix=10&oauth=10&mail=10&index=10&authorize=10&tokenID=10&scope=10&response_type=10"
+      - "{{BaseURL}}/?onclick=10&form=10&position=10&json=10&jsonp=10&cron=10&account_id=10&accountID=10&display=10&_csrf=10&csrf=10&signup=10&signout=10&logoff=10&public=10&footer=10&header=10&contact=10&setup=10&migration=10&token=XSS"      
+      - "{{BaseURL}}/?features=10&feature=10&chains=10&chain=10&info=10&into=10&app_id=10&release=10&request=10&alert=10&notice=10&notification=10&warning=10&success=10&feedback=10&prompt=10&modal=10&popup=10&pop=10&toast=10&banner=10&announcement=10&note=10&hint=10&confirmation=10&result=10&update=10&response=10&token=XSS"
+      - "{{BaseURL}}/?dialog=10&box=10&commentary=10&statement=10&commentary=10&explanation=10&guideline=10&tip=10&instruction=10&pointer=10&suggestion=10&direction=10&advisory=10&remark=10&notation=10&output=10&outcome=10&reflection=10&label=10&mensagem=10&texto=10&conteudo=10&payload=10&aviso=10&alerta=10&notificacao=10&token=XSS"
+      - "{{BaseURL}}/?instrucao=10&comunicado=10erromsg=10&sucesso=10&btn=10&button=10&leight=10&host=10&domain=10&http=10&subdomain=10&server=10&origin=10&ip=10&protocol=10&gateway=10&site=10&platform=10&language=10&encode=10&scheme=10&consulta=10&submit=10&method=10&data-id=10&authType=10&isRegister=10&loginRequestId=10&token=XSS"      
+      - "{{BaseURL}}/?client=10&filename=10&ext=10&external=10&utm_source=10&visibility=10&season=10&monitor=10&Itemid=10&promo=10&category=10&subscribe=10&unsubscribe=10&unsubscribe_token=10&event=10&local=10&brand=10&kind=10&department=10&product=10&product_id=10&productId=10&zipcode=10&day=10&phone=10&cc=10&command=10&token=XSS"  
+      - "{{BaseURL}}/?querystring=10&charset=10&currency=10&device=10&browser=10&access_token=10&age=10&firstname=10&lastname=10&sobrenome=10&address=10&role=10&color=10&quantity=10&price=10&discount=10&rating=10&location=10&startDate=10&endDate=10&sessionID=10&oauthToken=10&errorURL=10&proxy=10&radius=10&callbackUrl=10&token=XSS"
+      - "{{BaseURL}}/?languageCode=10&model=10&userAgent=10&utm_medium=10&utm_campaign=10&utm_content=10&trackingCode=10&session=10&timestamp=10&nonce=10&hash=10&grant_type=10&client_secret=10&realm=10&resource=10&preload=10&async=10&autoplay=10&control=10&controls=10&href=10&start=10&end=10&frameborder=10&referrer-policy=10&token=XSS"    
 
     matchers-condition: and
     matchers:
       - type: word
         words:
-          - "username:"
-          - "username\":"          
-          - "e-mail:"
-          - "e-mail\":"               
+          - "@hotmail.com\",\""
+          - "@gmail.com\",\""          
+          - "@hotmail.com','"
+          - "@gmail.com','"               
+          
         part: body
 
       - type: word
