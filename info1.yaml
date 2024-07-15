@@ -34,10 +34,10 @@ requests:
     matchers:
       - type: word
         words:
-          - "@hotmail.com\",\""
-          - "@gmail.com\",\""          
-          - "@hotmail.com','"
-          - "@gmail.com','"               
+          - "@hotmail.com\", \""
+          - "@gmail.com\", \""          
+          - "@hotmail.com', '"
+          - "@gmail.com', '"               
           
         part: body
 
