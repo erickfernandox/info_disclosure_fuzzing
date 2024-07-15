@@ -1,0 +1,30 @@
+id: information-disclosure-erickfernandox
+
+info:
+  name: Information Disclosure
+  author: erickfernandox
+  severity: high
+  tags: cve,disclosure
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/10%00"
+      - "{{BaseURL}}/10%0d"
+      - "{{BaseURL}}/10%0a"
+      - "{{BaseURL}}/10/"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "@hotmail.com\", \""
+          - "@gmail.com\", \""          
+          - "@hotmail.com', '"
+          - "@gmail.com', '"                 
+        part: body
+
+      - type: word
+        words:
+          - "Content-Type: application/json"
+        part: header
