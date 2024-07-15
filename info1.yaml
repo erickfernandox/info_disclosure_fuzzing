@@ -37,7 +37,7 @@ requests:
           - "@hotmail.com\", \""
           - "@gmail.com\", \""          
           - "@hotmail.com', '"
-          - "@gmail.com', '"               
+          - "@gmail.com', '"                 
         part: body
 
       - type: word
