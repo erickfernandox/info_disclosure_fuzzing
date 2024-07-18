@@ -13,6 +13,9 @@ requests:
       - "{{BaseURL}}/10%0d"
       - "{{BaseURL}}/10%0a"
       - "{{BaseURL}}/10/"
+      - "{{BaseURL}}/10/*"      
+      - "{{BaseURL}}/10/%26"
+      - "{{BaseURL}}/10/%3f"      
 
     matchers-condition: and
     matchers:
@@ -21,10 +24,11 @@ requests:
           - "@hotmail.com\", \""
           - "@gmail.com\", \""          
           - "@hotmail.com', '"
-          - "@gmail.com', '"                 
+          - "@gmail.com', '"          
+          - "DB_USERNAME"
+          - "AWS_SECRET_ACCESS_KEY"
+          - "SecretAccessKey"          
+          - "@echo off"          
+          - "#!/bin/bash"          
+          - "api_key="          
         part: body
-
-      - type: word
-        words:
-          - "Content-Type: application/json"
-        part: header
