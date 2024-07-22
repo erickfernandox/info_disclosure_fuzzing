@@ -37,10 +37,11 @@ requests:
           - "@hotmail.com\", \""
           - "@gmail.com\", \""          
           - "@hotmail.com', '"
-          - "@gmail.com', '"                 
+          - "@gmail.com', '"       
+          - "DB_USERNAME"
+          - "AWS_SECRET_ACCESS_KEY"
+          - "SecretAccessKey"          
+          - "@echo off"          
+          - "#!/bin/bash"          
+          - "api_key="                 
         part: body
-
-      - type: word
-        words:
-          - "Content-Type: application/json"
-        part: header
