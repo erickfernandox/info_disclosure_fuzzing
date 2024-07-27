@@ -53,6 +53,7 @@ requests:
       - "{{BaseURL}}/../config/config.prod.json"
       - "{{BaseURL}}/../env/.config"      
       
+    stop-at-first-match: true               
     matchers-condition: and
     matchers:
       - type: word
@@ -60,14 +61,17 @@ requests:
           - "DB_USERNAME"
           - "DB_USER"
           - "AWS_SECRET_ACCESS_KEY"
+          - "aws_secret_access_key"
           - "AWS_SECRET"    
-          - "SECRET_KEY"    
+          - "SECRETKEY="              
+          - "SECRET_KEY="    
           - "MYSQL_PASSWORD:"          
           - "MAIL_PASSWORD:"          
           - "SecretAccessKey"          
           - "@echo off"          
           - "#!/bin/bash"          
           - "api_key="
+          - "api_secret="          
           - "argo.database.user"
           - "github-oauth:"          
           - "'PASSWORD':"          
