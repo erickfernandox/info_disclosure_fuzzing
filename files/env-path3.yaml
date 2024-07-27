@@ -49,7 +49,7 @@ requests:
       - "{{BaseURL}}/../../../env-config.js"      
       - "{{BaseURL}}/../../../app/etc/local.xml"
       - "{{BaseURL}}/../../../.github/workflows/puch.yml"
-      - "{{BaseURL}}/../../../auth.json
+      - "{{BaseURL}}/../../../auth.json"
       - "{{BaseURL}}/../../../config/config.prod.json"
       - "{{BaseURL}}/../../../env/.config"      
       
