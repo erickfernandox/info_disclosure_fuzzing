@@ -71,6 +71,7 @@ requests:
           - "@echo off"          
           - "#!/bin/bash"          
           - "api_key="
+          - "api_secret="          
           - "argo.database.user"
           - "github-oauth:"          
           - "'PASSWORD':"          
