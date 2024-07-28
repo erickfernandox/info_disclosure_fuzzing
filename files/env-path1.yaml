@@ -52,8 +52,7 @@ requests:
       - "{{BaseURL}}/../auth.json"
       - "{{BaseURL}}/../config/config.prod.json"
       - "{{BaseURL}}/../env/.config"      
-        
-      - "{{BaseURL}}/..;/.git/config"      
+      - "{{BaseURL}}/../.git/config"      
 
 
     stop-at-first-match: true               
