@@ -52,7 +52,8 @@ requests:
       - "{{BaseURL}}%5f%2e%2e%5fauth.json"
       - "{{BaseURL}}%5f%2e%2e%5fconfig/config.prod.json"
       - "{{BaseURL}}%5f%2e%2e%5fenv/.config"      
-      
+      - "{{BaseURL}}%5f%2e%2e%5f.git/config"      
+
     stop-at-first-match: true               
     matchers-condition: and
     matchers:
@@ -74,14 +75,7 @@ requests:
           - "api_secret="          
           - "argo.database.user"
           - "github-oauth:"          
-          - "'PASSWORD':"       
+          - "'PASSWORD':"      
           - "REACT_APP_ENV:"
-          
+          - "repositoryformatversion ="
         part: body
-
-      - type: status
-        status:
-          - 200
-          - 400
-          - 404
-          - 500
