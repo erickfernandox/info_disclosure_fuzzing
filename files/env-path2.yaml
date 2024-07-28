@@ -80,10 +80,3 @@ requests:
           - "REACT_APP_ENV:"
           - "repositoryformatversion ="
         part: body
-
-      - type: status
-        status:
-          - 200
-          - 400
-          - 404
-          - 500
