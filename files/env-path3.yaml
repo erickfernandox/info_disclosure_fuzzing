@@ -74,7 +74,8 @@ requests:
           - "api_secret="          
           - "argo.database.user"
           - "github-oauth:"          
-          - "'PASSWORD':"          
+          - "'PASSWORD':"         
+          - "REACT_APP_ENV:"          
         part: body
 
       - type: status
