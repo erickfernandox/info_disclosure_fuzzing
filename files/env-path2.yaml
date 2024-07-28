@@ -52,6 +52,8 @@ requests:
       - "{{BaseURL}}/..;/auth.json"
       - "{{BaseURL}}/..;/config/config.prod.json"
       - "{{BaseURL}}/..;/env/.config"      
+      - "{{BaseURL}}/..;/.git/config"      
+
 
     stop-at-first-match: true               
     matchers-condition: and
@@ -76,6 +78,7 @@ requests:
           - "github-oauth:"          
           - "'PASSWORD':"      
           - "REACT_APP_ENV:"
+          - "repositoryformatversion ="
         part: body
 
       - type: status
