@@ -45,6 +45,10 @@ http:
         - ".dist"
         - ".temp"
         - ".test"
+        - ".txt"
+        - ".log"
+        
+        
 
     stop-at-first-match: true
     iterate-all: true
