@@ -1,0 +1,64 @@
+id: wp-db
+
+info:
+  name: wp-db
+  author: theWeertic
+  severity: medium
+  description: |
+    Potential configuration file leak through backup extensions in WordPress paths.
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/wp-config.php (1){{fuzz}}"
+
+    payloads:
+      fuzz:
+        - ".back"
+        - ".backup"
+        - ".bak"
+        - ".BAK"
+        - ".bak2"
+        - ".bck"
+        - ".bk"
+        - ".bkp"
+        - ".bok"
+        - ".bu"
+        - ".orig"
+        - ".old"
+        - ".OLD"
+        - ".old2"
+        - ".save"
+        - ".sav"
+        - ".tmp"
+        - ".copy"
+        - ".previous"
+        - ".backup1"
+        - ".backup2"
+        - ".archive"
+        - ".bkp1"
+        - ".bkp2"
+        - ".disabled"
+        - ".dist"
+        - ".temp"
+        - ".test"
+        - ".txt"
+        - ".log"
+        - ".dev"        
+        - ".2"                
+        - "~"        
+        
+
+    stop-at-first-match: true
+    iterate-all: true
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "LOGGED_IN_KEY"
+          - "'DB_PASSWORD',"
+      - type: status
+        status:
+          - 200
