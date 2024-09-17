@@ -59,6 +59,7 @@ http:
         part: body
         words:
           - "LOGGED_IN_KEY"
+          - "'DB_PASSWORD',"
       - type: status
         status:
           - 200
