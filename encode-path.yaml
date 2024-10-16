@@ -1,0 +1,41 @@
+id: simple-info-disclosure
+
+info:
+  name: Simple Information Disclosure with Content Check
+  author: Josekutty Kunnelthazhe Binu
+  severity: high
+  description: This template identifies common sensitive information disclosure files on websites and subdomains by checking for specific content in the body of the responses.
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/%2egit%2fconfig"
+      - "{{BaseURL}}/%2eenv"
+      - "{{BaseURL}}/config%2ephp"
+      - "{{BaseURL}}/%2e%2e%2fconfig%2ephp"      
+      - "{{BaseURL}}/%2e%2e%2f%2egit%2fconfig"            
+      
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+      - type: word
+        words:
+          - "DB_PASSWORD"
+          - "DB_USER"
+          - "DB_HOST"
+          - "DB_NAME"
+          - "API_KEY"
+          - "SECRET_KEY"
+          - "ACCESS_KEY"
+          - "repositoryformatversion"
+          
+      - type: word
+        words:
+          - "403 Forbidden"
+          - "404 Not Found"
+          - "500 Internal Server Error"
+        part: body
+        condition: and
+        negative: true
