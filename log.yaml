@@ -28,8 +28,7 @@ requests:
           - "Yii Debug"
           - "yii\base\Application"          
           - "SQLSTATE[HY000]"
-          - "SQLSTATE[HY000]"
-          - "SQLSTATE[HY000]"
+          - "Uncaught Error: Call to undefined"
           - "SECRET_KEY"
           - "APP_SECRET"
 
