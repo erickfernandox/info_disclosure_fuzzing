@@ -1,0 +1,36 @@
+id: information-disclosure-erickfernandox
+
+info:
+  name: Information Disclosure
+  author: erickfernandox
+  severity: high
+  tags: cve,disclosure
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/debug"
+      - "{{BaseURL}}/log"
+      - "{{BaseURL}}/logs"
+      - "{{BaseURL}}/log.txt"
+      - "{{BaseURL}}/debug.txt"
+      - "{{BaseURL}}/debug.log"
+      - "{{BaseURL}}/error.log"
+      - "{{BaseURL}}/auth.log"
+      - "{{BaseURL}}/debugger.log"
+      - "{{BaseURL}}/event.log"
+
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "Yii Debug"
+          - "yii\base\Application"          
+          - "SQLSTATE[HY000]"
+          - "SQLSTATE[HY000]"
+          - "SQLSTATE[HY000]"
+          - "SECRET_KEY"
+          - "APP_SECRET"
+
+        part: body
