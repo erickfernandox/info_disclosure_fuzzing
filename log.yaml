@@ -26,10 +26,13 @@ requests:
       - type: word
         words:
           - "Yii Debug"
-          - "yii\base\Application"          
+          - "yii\\base\\Application"          
           - "SQLSTATE[HY000]"
           - "Uncaught Error: Call to undefined"
           - "SECRET_KEY"
           - "APP_SECRET"
-
+          - "SecretAccessKey"
+          - "aws_secret_access_key"
+          - "AWS_SECRET_ACCESS_KEY"
+          - "PHP Warning:"
         part: body
