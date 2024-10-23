@@ -19,6 +19,9 @@ requests:
       - "{{BaseURL}}/auth.log"
       - "{{BaseURL}}/debugger.log"
       - "{{BaseURL}}/event.log"
+      - "{{BaseURL}}/test"
+      - "{{BaseURL}}/test.txt"
+    
 
 
     matchers-condition: and
@@ -35,4 +38,5 @@ requests:
           - "aws_secret_access_key"
           - "AWS_SECRET_ACCESS_KEY"
           - "PHP Warning:"
+          - "@gmail.com',"          
         part: body
