@@ -10,6 +10,8 @@ requests:
   - method: GET
     path:
       - "{{BaseURL}}/%2egit%2fconfig"
+      - "{{BaseURL}}%2e/%2egit%2fconfig"
+      - "{{BaseURL}}%2e%2e/%2egit%2fconfig"
       - "{{BaseURL}}/%2eenv"
       - "{{BaseURL}}/config%2ephp"
       - "{{BaseURL}}/%2e%2e%2fconfig%2ephp"      
